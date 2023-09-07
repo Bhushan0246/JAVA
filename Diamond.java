@@ -9,7 +9,7 @@ class Diamond{
 			for(int sp = 0; sp < row-i-1; sp++)
 				System.out.print(" ");
 			for(int j = 0; j < 2*i+1; j++)
-				System.out.print("*");
+				System.out.print(j+1);
 			System.out.println("");
 		}
 		//invert pyramid
@@ -17,7 +17,7 @@ class Diamond{
 			for(int sp = 0; sp < i; sp++)
 				System.out.print(" ");
 			for(int j = 0; j < 2*(row-i)-1; j++)
-				System.out.print("*");
+				System.out.print(j+1);
 			System.out.println("");
 		} 
 	}
