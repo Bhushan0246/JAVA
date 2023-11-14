@@ -7,5 +7,8 @@ class StringOperation1{
         System.out.println("Length of string: " + str1.length());
         System.out.println("String in upper case: " + str1.toUpperCase());
         System.out.println("String in lower case: " + str1.toLowerCase());
+        System.out.print("Your Gender? ");
+        char ch = sc.next().charAt(0);
+        System.out.println("Gender: " + ch);
     }
 }
