@@ -4,12 +4,9 @@ class Reverse_String{
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter any string: ");
         String str = sc.nextLine();
-        char[] temp = new char[str.length()];
-        str.getChars(0, str.length(), temp, 0);
-        char[] dest = new char[str.length()];
-        for(int i=0; i<temp.length; i++)    //reverse string and store in dest[]
-            dest[temp.length-i-1] = temp[i];
-        String tempString = new String(dest); //convert char[] to string
-        System.out.println("Reversed string: "+tempString);
+        String rev = "";
+        for(int i = str.length()-1; i>=0; i--)
+            rev += str.charAt(i);
+        System.out.println("Reversed string: " + rev);
     }
 }
