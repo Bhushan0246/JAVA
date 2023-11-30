@@ -1,9 +1,9 @@
 import java.util.Scanner;
 class Stack{
     Scanner sc = new Scanner(System.in);
-    int tos;
+    private int tos;
     int size;
-    int stk[];
+    private int stk[];
     Stack(int size){
         tos = -1;
         this.size = size;
