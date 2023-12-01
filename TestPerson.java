@@ -48,12 +48,18 @@ class Course extends Student{
     void display(){
         super.display();
         System.out.print(" \tProgram: " + program + "\nDuration: " + duration);
-        System.out.print(" \tGrade: " + result());
+        System.out.println(" \tGrade: " + result());
+        // Strike line
+        for(int i=0; i<40; i++)
+            System.out.print("-");
+        System.out.println("");
     }
 }
 class TestPerson{
     public static void main(String[] args){
         Course man1 = new Course("Bhushan", "Harode", 19, 84.55, 202204, "BSc", 4);
         man1.display();
+        Course man2 = new Course("Ayush", "Patidar", 20, 85, 202201, "I.Mtech", 5);
+        man2.display();
     }
 }
